@@ -1,0 +1,58 @@
+
+
+<!DOCTYPE html>
+<html >
+
+<head>
+  <meta charset="UTF-8">
+  
+
+  <title>URL Shortener</title>
+  
+      <style>
+      body{
+  background-color: #e6f2ff;
+  text-align:center;
+  margin: 0px auto 0px auto;
+}
+h1{
+  text-align:center;
+}
+.res{
+  border: solid 1px;
+  width:600px;
+  height: 400px;
+  margin: 50px auto 100px auto;
+  text-align:center;
+}
+    </style>
+
+  
+  
+  
+  
+</head>
+
+<body translate="no" >
+
+  <h1>URL shortener</h1>
+<!--<div class="res"> </div> -->
+<div id="res">Enter Link:<br> 
+  <input name="unixtime" id="form1" type="text"> 
+  <button type="button" onclick="shorten()">Go !</button>
+</div> <br>
+
+    <script>
+    function shorten(){
+  var input = document.getElementById("form1").value;
+  var url = "https://testenv-tarvela.c9users.io/new/"+input;
+  window.location = url;
+}
+  </script>
+
+  
+  
+
+</body>
+</html>
+ 
